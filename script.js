@@ -23,15 +23,17 @@ const init = function () {
   activePlayer = 0;
   playing = true;
 
-  diceEl.classList.add('hidden');
   score0El.textContent = 0;
   score1El.textContent = 0;
   current0El.textContent = 0;
   current1El.textContent = 0;
+  
+  diceEl.classList.add('hidden');
+
   player0El.classList.remove('player--winner');
   player1El.classList.remove('player--winner');
   player0El.classList.add('player--active');
-  player0El.classList.remove('player--active');
+  player1El.classList.remove('player--active');
 };
 init();
 //Hidden is displayed none in the css file, so here we ADD it so it'll not b visible
